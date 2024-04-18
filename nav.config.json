@@ -1,0 +1,21 @@
+{
+  "public": [
+    {
+      "id": "Libros_Catalogo",
+      "nav_url": "index.php?page=Libros_Catalogo",
+      "nav_label":"Libros"
+    }
+  ],
+  "private": [
+    {
+      "id":"Menu_PaymentCheckout",
+      "nav_url": "index.php?page=Checkout_Checkout",
+      "nav_label": "Carretilla de Compra"
+    },
+    {
+      "id": "Libros_Catalogo",
+      "nav_url": "index.php?page=Libros_Catalogo",
+      "nav_label":"Libros"
+    }
+  ]
+}

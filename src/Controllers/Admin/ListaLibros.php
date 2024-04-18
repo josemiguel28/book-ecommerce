@@ -1,0 +1,1 @@
+<?phpnamespace Controllers\Admin;use Controllers\PublicController;class ListaLibros extends PublicController{    public function run():void{        $viewData["libros"] = \Dao\Libros\Libros::getAll();        \Views\Renderer::render("admin/listalibros", $viewData);    }}
