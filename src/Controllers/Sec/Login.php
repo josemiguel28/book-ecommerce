@@ -49,6 +49,7 @@ class Login extends \Controllers\PublicController
                         );
                         // Aqui se debe establecer acciones segun la politica de la institucion.
                     }
+                    
                     if (! $this->hasError) {
                         \Utilities\Security::login(
                             $dbUser["usercod"],

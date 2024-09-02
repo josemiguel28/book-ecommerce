@@ -32,7 +32,6 @@
 -->
 
 
-
 <form class="grid" method="post"
       action="index.php?page=sec_register">
 		<div class="bg-light py-3 py-md-5">
@@ -63,11 +62,16 @@
 
 																</div>
 																<div class="col-12">
-																		<label for="txtPswd" class="form-label">Contraseña<span
-																						class="text-danger">*</span></label>
-																		<input type="password" class="form-control" id="txtPswd" name="txtPswd"
-																		       value="{{txtPswd}}" required>
-
+																		<label for="txtPswd" class="form-label">Contraseña<span class="text-danger">*</span></label>
+																		<div class="input-group">
+																				<input type="password" class="form-control" id="txtPswd" name="txtPswd"
+																				       value="{{txtPswd}}" required>
+																				<div class="input-group-append">
+																						<button id="show_password" class="btn btn-primary" type="button">
+																								<i class="fa fa-eye" aria-hidden="true"></i>
+																						</button>
+																				</div>
+																		</div>
 																		{{if errorPswd}}
 																		<div class="error col-12 py-2 col-m-8 offset-m-4">{{errorPswd}}</div>
 																		{{endif errorPswd}}
@@ -92,7 +96,7 @@
 																<hr class="mt-5 mb-4 border-secondary-subtle">
 																<div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-end">
 																<span>Ya tienes una cuenta? Ingresa <a href="index.php?page=sec_login"
-																                                        class="text-decoration-none text-decoration-underline">aqui
+																                                       class="text-decoration-none text-decoration-underline">aqui
 																</a></span>
 
 																</div>
@@ -105,3 +109,19 @@
 				</div>
 		</div>
 </form>
+
+<script>
+		document.getElementById('show_password').addEventListener('click', function () {
+				var passwordField = document.getElementById('txtPswd');
+				var passwordFieldType = passwordField.getAttribute('type');
+				if (passwordFieldType === 'password') {
+						passwordField.setAttribute('type', 'text');
+						this.children[0].classList.remove('fa-eye');
+						this.children[0].classList.add('fa-eye-slash');
+				} else {
+						passwordField.setAttribute('type', 'password');
+						this.children[0].classList.remove('fa-eye-slash');
+						this.children[0].classList.add('fa-eye');
+				}
+		});
+</script>

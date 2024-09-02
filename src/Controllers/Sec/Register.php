@@ -19,6 +19,7 @@ class Register extends PublicController
         if ($this->isPostBack()) {
             $this->txtEmail = $_POST["txtEmail"];
             $this->txtPswd = $_POST["txtPswd"];
+            
             //validaciones
             if (!(Validators::IsValidEmail($this->txtEmail))) {
                 $this->errorEmail = "El correo no tiene el formato adecuado";
@@ -27,6 +28,18 @@ class Register extends PublicController
             if (!Validators::IsValidPassword($this->txtPswd)) {
                 $this->errorPswd = "La contraseña debe tener al menos 8 caracteres una mayúscula, un número y un caracter especial.";
                 $this->hasErrors = true;
+            }
+            
+            //verficar si el usuario no existe en la base de datos
+            if (!$this->hasErrors) {
+                try{
+                    if (\Dao\Security\Security::getUsuarioByEmail($this->txtEmail)) {
+                        $this->errorEmail = "El correo ya se encuentra registrado";
+                        $this->hasErrors = true;
+                    }
+                } catch (Exception $ex){
+                    die($ex);
+                }
             }
 
             if (!$this->hasErrors) {

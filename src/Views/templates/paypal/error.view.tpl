@@ -1,1 +1,1 @@
-<h1>Orden Denegada</h1>
+<h1>Lo sentimos, la orden no se realizo correctamente. <i class="fas fa-exclamation-triangle"></i></h1><a href="index.php?page=Index">Volver a la pagina de inicio</a>

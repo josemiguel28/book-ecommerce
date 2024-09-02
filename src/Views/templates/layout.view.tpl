@@ -96,10 +96,8 @@
 <nav class="navbar navbar-expand-lg mb-5 mt-3">
 		<div class="container d-flex">
 				<a class="navbar-brand" href="index.php">
-
 						<img class="logo" loading="lazy" src="/{{~BASE_DIR}}/public/img/logo.jpg"
-						     alt="logo"/>
-
+						     alt="logo" style="width: 8rem; height: 8rem"/>
 				</a>
 
 				<button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="collapse"
@@ -246,7 +244,7 @@
 
 		<!-- Copyright -->
 		<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-				© 2021 Copyright:
+				© 2021 Copyright
 		</div>
 		<!-- Copyright -->
 </footer>

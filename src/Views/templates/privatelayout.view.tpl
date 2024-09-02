@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
 		<meta charset="utf-8">
@@ -28,36 +28,12 @@
 </head>
 
 <body>
-<!--
-<header>
-		<input type="checkbox" class="menu_toggle" id="menu_toggle"/>
-		<label for="menu_toggle" class="menu_toggle_icon">
-				<div class="hmb dgn pt-1"></div>
-				<div class="hmb hrz"></div>
-				<div class="hmb dgn pt-2"></div>
-		</label>
-		<h1>{{SITE_TITLE}}</h1>
-		<nav id="menu">
-				<ul>
-						<li><a href="index.php?page={{PRIVATE_DEFAULT_CONTROLLER}}"><i class="fas fa-home"></i>&nbsp;Inicio</a></li>
-						{{foreach NAVIGATION}}
-						<li><a href="{{nav_url}}">{{nav_label}}</a></li>
-						{{endfor NAVIGATION}}
-						<li><a href="index.php?page=sec_logout"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
-				</ul>
-		</nav>
-		{{with login}}
-		<span class="username">{{userName}} <a href="index.php?page=sec_logout"><i
-						class="fas fa-sign-out-alt"></i></a></span>
-		{{endwith login}}
-</header>
--->
 
 <nav class="navbar navbar-expand-lg mb-5 mt-3">
 		<div class="container d-flex">
 				<a class="navbar-brand" href="index.php">
 						<img class="logo" loading="lazy" src="/{{~BASE_DIR}}/public/img/logo.jpg"
-						     alt="logo"/>
+						     alt="logo" style="width: 8rem; height: 8rem"/>
 				</a>
 
 				<button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="collapse"
@@ -80,9 +56,9 @@
 								<a class="btn nav-link" type="submit" href="index.php?page=Checkout_Carrito">
 										<i class="bi-cart-fill me-1"></i>
 										Carrito
-										<span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+										<span class="badge bg-dark text-white ms-1 rounded-pill">{{COUNT_CART_ITEMS}}</span>
 								</a>
-								
+
 								<!--
 								{{with login}}
 
@@ -92,20 +68,20 @@
 								{{endwith login}}
 								<a class="nav-link" href="index.php?page=sec_logout">Salir</a>
 -->
-								
+
 								<div class="dropdown">
-										{{with login}}
+										
 										<a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
 										   data-bs-toggle="dropdown" aria-expanded="false">
-												<span>{{userName}}</span> 
+												<span>{{USERNAME_USER}}</span>
 										</a>
-										{{endwith login}}
+										
 
 										<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-												<li><a class="dropdown-item" href="index.php?page=Libros_Ordenes">Ver Ordenes</a></li>
+												<li><a class="dropdown-item" href="index.php?page=Ordenes_ordenes">Ver Ordenes</a></li>
 												<li><a class="dropdown-item" href="index.php?page=sec_logout"><i
 																class="fas fa-sign-out-alt"></i> Salir</a></li>
-												
+
 										</ul>
 								</div>
 						</div>
@@ -118,10 +94,120 @@
 		{{{page_content}}}
 </main>
 
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted mt-5">
+		<!-- Section: Social media -->
+		<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+				<!-- Left -->
+				<div class="me-5 d-none d-lg-block">
+						<span>Siguenos en Nuestras Redes Sociales</span>
+				</div>
+				<!-- Left -->
 
-<footer>
-		<div>Todo los Derechos Reservados {{~CURRENT_YEAR}} &copy;</div>
+				<!-- Right -->
+				<div>
+						<a href="#!" target="_blank" class="me-4 text-reset">
+								<i class="fab fa-facebook-f"></i>
+						</a>
+
+						<a href="#!" target="_blank" class="me-4 text-reset">
+								<i class="fab fa-instagram"></i>
+						</a>
+
+						<a href="#!"
+						   target="_blank" class="me-4 text-reset">
+								<i class="fab fa-whatsapp"></i>
+						</a>
+
+				</div>
+				<!-- Right -->
+		</section>
+		<!-- Section: Social media -->
+
+		<!-- Section: Links  -->
+		<section class="">
+				<div class="container text-center text-md-start mt-5">
+						<!-- Grid row -->
+						<div class="row mt-3">
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+										<!-- Content -->
+										<h6 class="text-uppercase fw-bold mb-4">
+												<i class="fas fa-gem me-3"></i>The Book Place
+										</h6>
+										<p>
+												Somos una tienda online en la cual podras obtener tus libros favoritos.
+										</p>
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+										<!-- Links -->
+										<h6 class="text-uppercase fw-bold mb-4">
+												Categorias
+										</h6>
+										<p>
+												<a href="#!" class="text-reset">Autoyuda</a>
+										</p>
+										<p>
+												<a href="#!" class="text-reset">Poesia</a>
+										</p>
+										<p>
+												<a href="#!" class="text-reset">Romanticos</a>
+										</p>
+										<p>
+												<a href="#!" class="text-reset">Infantiles</a>
+										</p>
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+										<!-- Links -->
+										<h6 class="text-uppercase fw-bold mb-4">
+												Enlaces Útiles
+										</h6>
+										<p>
+												<a href="#!" class="text-reset">Acerca de nosotros</a>
+										</p>
+										<p>
+												<a href="#!" class="text-reset">FAQ</a>
+										</p>
+										<p>
+												<a href="#!" class="text-reset">Contactanos</a>
+										</p>
+										<p>
+												<a href="#!" class="text-reset">Libros</a>
+										</p>
+
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+										<!-- Links -->
+										<h6 class="text-uppercase fw-bold mb-4">Cantactanos</h6>
+
+										<i class="fas fa-envelope me-3"></i>
+										thebookplace@gmail.com
+										</p>
+										<p><i class="fas fa-phone me-3"></i> +504 9777-5777</p>
+								</div>
+								<!-- Grid column -->
+						</div>
+						<!-- Grid row -->
+				</div>
+		</section>
+		<!-- Section: Links  -->
+
+		<!-- Copyright -->
+		<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+				© 2021 Copyright
+		</div>
+		<!-- Copyright -->
 </footer>
+<!-- Footer -->
 {{foreach EndScripts}}
 <script src="/{{~BASE_DIR}}/{{this}}"></script>
 {{endfor EndScripts}}

@@ -2,6 +2,9 @@
 
 namespace Utilities;
 
+use Dao\Cart\Cart as CartDao;
+use Dao\Security\Usuario as UsuarioDao;
+
 class Nav
 {
     public static function setPublicNavContext()
@@ -13,6 +16,7 @@ class Nav
             Context::setContext("PUBLIC_NAVIGATION", $navigationData, $saveToSession);
         }
     }
+
     public static function setNavContext()
     {
         $tmpNAVIGATION = Context::getContextByKey("NAVIGATION");
@@ -50,15 +54,46 @@ class Nav
             }
             $jsonContent = file_get_contents($filePath);
             $saveToSession = intval(Context::getContextByKey("DEVELOPMENT")) !== 1;
+
+            //new code
+            //contar los items del carrito desde el dao
+            $cartItems = CartDao::obtenerCarrito(Security::getUserId());
+            $cartItemsCount = count($cartItems);
+
+            Context::setContext("COUNT_CART_ITEMS", $cartItemsCount, $saveToSession);
+
+
+            //second new code
+            //obtene el usuario desde la base de datos
+            $user = Security::getUserId();
+
+            $userData = UsuarioDao::getByPrimaryKey($user);
+
+            if (is_array($userData)) {
+                //extraer el email del usuario
+                $userEmail = $userData["useremail"];
+
+                //extraer el nombre de usuario hasta el @
+                $userName = substr($userEmail, 0, strpos($userEmail, "@"));
+
+                Context::setContext("USERNAME_USER", $userName, $saveToSession);
+
+            }
+
+
+            //end new code
+
             Context::setContext("NAVIGATION_DATA", $jsonContent, $saveToSession);
         }
         $jsonData = json_decode($jsonContent, true);
         return $jsonData;
     }
 
+
     private function __construct()
     {
     }
+
     private function __clone()
     {
     }

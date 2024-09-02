@@ -10,6 +10,8 @@
  * @link     http://
  */
 namespace Controllers;
+use Dao\Cart\Cart as CartDao;
+use Views\Renderer;
 
 /**
  * Private Access Controller Base Class
@@ -22,6 +24,9 @@ namespace Controllers;
  */
 abstract class PrivateController extends PublicController
 {
+    protected int $cartTotal = 0;
+    protected array $viewData = [];
+    
     private function _isAuthorized()
     {
         $isAuthorized = \Utilities\Security::isAuthorized(
@@ -53,4 +58,7 @@ abstract class PrivateController extends PublicController
         $this->_isAuthorized();
 
     }
+    
+    
+
 }

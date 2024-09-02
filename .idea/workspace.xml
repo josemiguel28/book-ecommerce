@@ -1,7 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ComposerSettings">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="67255977-6649-4fbe-b927-3307ee73aadc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controllers/Checkout/Cliente.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controllers/Libros/Libro.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controllers/Ordenes/OrdenDetalle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Views/templates/checkout/informacionCliente.view.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Views/templates/libros/libro.view.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Views/templates/ordenes/detalle.view.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Views/templates/ordenes/ordenes.view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidorImagenes/236f45dd06101ed75dedb574c8a8e686.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidorImagenes/5039cbbf56e7e19715348e4926355bb1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidorImagenes/582ec213acd22c2d1b6b22f8aadd3dd4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidorImagenes/968998f16750fca151e9d46d5a3f6672.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidorImagenes/bc5c3caca7fcb8d9ddb89f2b81ef2079.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servidorImagenes/caa1b5207d4c27d9873bfe5e834b506e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Admin/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Admin/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Checkout/Accept.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Checkout/Accept.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Checkout/Checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Checkout/Checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Checkout/Error.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Checkout/Error.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Libros/Catalogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Libros/Catalogo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Libros/Ordenes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Ordenes/Ordenes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/PrivateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/PrivateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Sec/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Sec/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Sec/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Sec/Register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dao/Cart/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/Cart/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dao/Libros/Libros.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/Libros/Libros.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dao/Productos/Categories.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dao/Pulseras/Pulsera.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utilities/Nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilities/Nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/templates/admin/formulario.view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/templates/admin/formulario.view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/templates/carrito/carrito.view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/templates/carrito/carrito.view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/templates/index.view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/templates/index.view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/templates/layout.view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/templates/layout.view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/templates/libros/catalogo.view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/templates/libros/catalogo.view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/templates/libros/ordenes.view.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/templates/paypal/error.view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/templates/paypal/error.view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/templates/privatelayout.view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/templates/privatelayout.view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/templates/security/login.view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/templates/security/login.view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/templates/security/sigin.view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/templates/security/sigin.view.tpl" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
-  <component name="PropertiesComponent">{}</component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/league/tactician-logger" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/league/tactician-container" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/league/tactician-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/league/tactician" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/league/pipeline" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/flyfinder" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/graphviz" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/phpdocumentor" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/wikimedia/less.php" />
+      <path value="$PROJECT_DIR$/vendor/jawira/plantuml" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2fGLTdMuYuvAsBj57rSDDHCudpp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/apache/htdocs/bienesraicesMVC&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\mcv202401\src\Views\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\mcv202401\src\Views\templates\ordenes" />
+      <recent name="C:\xampp\htdocs\mcv202401\src\Views\templates\Libros" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PS-241.15989.102" />
+        <option value="bundled-php-predefined-ba97393d7c68-c76157a7178b-com.jetbrains.php.sharedIndexes-PS-241.15989.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67255977-6649-4fbe-b927-3307ee73aadc" name="Changes" comment="" />
+      <created>1713422476801</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713422476801</updated>
+      <workItem from="1713422477926" duration="780000" />
+      <workItem from="1713459498778" duration="1288000" />
+      <workItem from="1717992639701" duration="5441000" />
+      <workItem from="1718214865202" duration="13208000" />
+      <workItem from="1718236670627" duration="1700000" />
+      <workItem from="1718299295898" duration="12568000" />
+      <workItem from="1718681515811" duration="21202000" />
+      <workItem from="1718735125134" duration="2280000" />
+      <workItem from="1720496722307" duration="7693000" />
+      <workItem from="1720556664794" duration="8341000" />
+      <workItem from="1720630549402" duration="174000" />
+      <workItem from="1720631091105" duration="758000" />
+      <workItem from="1720631890834" duration="103000" />
+      <workItem from="1720632128342" duration="2610000" />
+      <workItem from="1721242464366" duration="70000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
 </project>

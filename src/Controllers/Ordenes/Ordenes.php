@@ -1,0 +1,1 @@
+<?phpnamespace Controllers\Ordenes;use Controllers\PublicController;use Dao\Cart\Cart as CartDao;use Utilities\Security;use Views\Renderer;class Ordenes extends PublicController{    public function run():void{        $viewData["ordenes"] = CartDao::getUserOrders(Security::getUserId());                Renderer::render("ordenes/ordenes", $viewData);    }    }

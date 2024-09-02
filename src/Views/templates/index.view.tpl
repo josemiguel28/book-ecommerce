@@ -33,7 +33,7 @@
 										diferentes categorias.
 								</p>
 
-								<a href="">
+								<a href="index.php?page=Libros_Catalogo">
 										<button type="button" class="btn btn-primary btn-hero">Compra tu libro</button>
 								</a>
 						</div>
@@ -66,7 +66,9 @@
 				</div>
 				<!-- Columna para el botón -->
 				<div class="col-md-4 d-flex flex-column align-items-center justify-content-evenly">
-						<a href="index.php?page=Libros_Catalogo"> <button type="button" class="btn-categorias btn btn-primary ">Todas los Libros -></button></a>  
+						<a href="index.php?page=Libros_Catalogo">
+								<button type="button" class="btn-categorias btn btn-primary ">Todas los Libros -></button>
+						</a>
 				</div>
 		</div>
 </div>
@@ -76,7 +78,7 @@
 <section class="py-5">
 		<div class="container mt-5">
 				<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-						
+
 						{{foreach libros}}
 						<div class="col mb-5">
 								<div class="card h-100">
@@ -90,21 +92,22 @@
 														<!-- Product price-->
 														${{libroPrecio}}
 												</div>
-												
+
 												<span class="text-muted">Solo quedan <span class="text-decoration-underline">{{libroStock}}
 												</span> libros en stock</span>
 										</div>
 										<!-- Product actions-->
 										<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-												<div 
-																class="text-center"><a class="btn btn-outline-dark mt-auto" 
-												                               href="index.php?page=Libros_Catalogo">
-														Comprar</a></div>
+												<div class="text-center">
+														<a class="btn btn-outline-dark mt-auto"
+														   href="index.php?page=Libros_Catalogo">Comprar
+														</a>
+												</div>
 										</div>
 								</div>
 						</div>
 						{{endfor libros}}
-						
+
 				</div>
 		</div>
 </section>

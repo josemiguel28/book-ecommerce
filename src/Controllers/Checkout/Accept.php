@@ -3,6 +3,7 @@
 namespace Controllers\Checkout;
 
 use Controllers\PublicController;
+use Dao\Cart\Cart;
 use Dao\Cart\Cart as CartDao;
 use Utilities\Security;
 
@@ -27,8 +28,24 @@ class Accept extends PublicController
             $orderId = $orderData['id'];
             $orderStatus = $orderData['status'];
             $orderCaptureAmount = $orderData['purchase_units'][0]['payments']['captures'][0]['amount']['value'];
+           
+            $this->usercod = Security::getUserId();
+            $librosCarrito = CartDao::obtenerCarrito($this->usercod);
+            $cantidadTotal = 0;
+            $libroId = 0;
+
+            foreach ($librosCarrito as $libro) {
+                $cantidad = intval($libro["crrctd"]);
+                $cantidadTotal += $cantidad;
+                $libroId = intval($libro["libroid"]);
+                $totalPrice = $cantidad * floatval($libro["libroPrecio"]); // Asume que el precio del libro está en la misma moneda que la orden
+
+                // Inserta un registro en la tabla de detalles de la orden para cada libro en el carrito de compras
+                CartDao::insertOrderDetails($orderId, $libroId, $cantidad, $totalPrice);
+            }
             
-            CartDao::insertOrder(Security::getUserId(),$orderId,$orderCaptureAmount,$orderStatus);
+            CartDao::insertOrder(Security::getUserId(),$orderId,$orderCaptureAmount,$cantidadTotal,$orderStatus);
+            
         
         } else {
             $this->viewData["orderjson"] = "No Order Available!!!";

@@ -35,7 +35,7 @@ class Libros extends Table
        ecommerceprueba.libros.libroAutor
        from libros
          inner join categorias on libros.categoriaId = categorias.categoria_id
-         WHERE ecommerceprueba.libros.libroStatus = 'ACT'
+         WHERE ecommerceprueba.libros.libroStock > 0 AND ecommerceprueba.libros.libroStatus != 'INA'
         limit :limit; ", ["limit" => $limit]);
     }
     

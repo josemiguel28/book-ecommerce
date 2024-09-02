@@ -8,3 +8,6 @@ data
 docs/manual_tecnico
 composer.lock
 phpdoc.dist.xml
+.idea
+node_modules
+.idea/workspace.xml
